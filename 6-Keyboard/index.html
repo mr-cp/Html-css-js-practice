@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h3 id="display"></h3>
+
+        <div class="btns">
+
+            <div class="btn">
+                <button onclick="show('1')">1</button>
+                <button onclick="show('2')">2</button>
+                <button onclick="show('3')">3</button>
+                <button onclick="show('4')">4</button>
+                <button onclick="show('5')">5</button>
+                <button onclick="show('6')">6</button>
+                <button onclick="show('7')">7</button>
+                <button onclick="show('8')">8</button>
+                <button onclick="show('9')">9</button>
+                <button onclick="show('0')">0</button>
+                <button onclick="backspace('⌫')"> ⌫</button>
+            </div>
+
+            <div class="btn btn-1 ">
+                <button onclick="show('Q')">Q</button>
+                <button onclick="show('W')">W</button>
+                <button onclick="show('E')">E</button>
+                <button onclick="show('R')">R</button>
+                <button onclick="show('T')">T</button>
+                <button onclick="show('Y')">Y</button>
+                <button onclick="show('U')">U</button>
+                <button onclick="show('I')">I</button>
+                <button onclick="show('O')">O</button>
+                <button onclick="show('P')">P</button>
+
+            </div>
+
+            <div class="btn btn-2">
+                <button onclick="show('A')">A</button>
+                <button onclick="show('S')">S</button>
+                <button onclick="show('D')">D</button>
+                <button onclick="show('F')">F</button>
+                <button onclick="show('G')">G</button>
+                <button onclick="show('H')">H</button>
+                <button onclick="show('j')">J</button>
+                <button onclick="show('K')">K</button>
+                <button onclick="show('L')">L</button>
+            </div>
+
+            <div class="btn btn-3">
+                <button onclick="show('Z')">Z</button>
+                <button onclick="show('X')">X</button>
+                <button onclick="show('C')">C</button>
+                <button onclick="show('V')">V</button>
+                <button onclick="show('B')">B</button>
+                <button onclick="show('N')">N</button>
+                <button onclick="show('M')">M</button>
+                <button onclick="show('.')">.</button>
+            </div>
+
+            <div class="btn btn-4">
+                <button id="space" onclick="space()">⎵</button>
+                <button onclick="enter('P')">Enter</button>
+                <button id="reset" onclick="reset()">⟲</button>
+            </div>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
