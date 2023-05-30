@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 270px;
+    width: 155px;
+    background: rgb(7, 7, 7);
+    border-radius: 5px;
+    overflow: hidden;
+    border: 2px solid rgb(216, 209, 209);
+    box-shadow: 0px 0px 15px 0px rgba(182, 175, 175, 0.815);
+}
+
+.display {
+    height: 35%;
+    color: white;
+    margin: 0px;
+    overflow: scroll;
+}
+
+.display::-webkit-scrollbar {
+    display: none;
+}
+
+.btns {
+    background-color: rgb(75, 67, 70);
+    height: 65%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
