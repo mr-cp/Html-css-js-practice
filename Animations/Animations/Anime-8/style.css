@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    height: 9px;
+    width: 9px;
+    transform: rotate(45deg);
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    top: 9.2px;
+    left: 4px;
+    background-color: rgb(252, 248, 248);
+    /* position: absolute; */
+    animation: heart 3s both infinite;
+}
+
+.container::before {
+    content: "";
+    height: 7px;
+    width: 7px;
+    /* border: 1px solid black;*/
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    /* background-color: white; */
+    transform: rotate(53deg);
+    position: absolute;
+    border-radius: 50%;
+    top: -3px;
+    left: 1px;
+    animation: heart-left 3s both infinite;
+}
+
+.container::after {
+    content: "";
+    height: 7px;
+    width: 7px;
+    /* border: 1px solid black; */
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    /* background-color: white; */
+    transform: rotate(-51deg);
+    position: absolute;
+    border-radius: 50%;
+    top: 1px;
+    left: -3px;
+    animation: heart-right 3s infinite;
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(2);
+        rotate: 45deg;
+    }
+
+    50% {
+        transform: scale(-2);
+        rotate: 45deg;
+    }
+
+    100% {
+        transform: scale(2);
+        rotate: 45deg;
+
+    }
+}
+
+/* @keyframes heart-left {
+    100% {
+        background-color: red
+    }
+}
+
+@keyframes heart-right {
+    0% {
+        background-color: red
+    }
+} */
